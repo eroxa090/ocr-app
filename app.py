@@ -6,13 +6,11 @@ from datetime import datetime
 from openai import OpenAI
 
 # ------------------------------
-# Настройка OCR (создаём только 1 раз)
+# Настройка OCR
 # ------------------------------
-@st.cache_resource
-def load_ocr():
-    return PaddleOCR(lang='ru')
+ocr = PaddleOCR(lang='ru')  # OCR с поддержкой русского языка
 
-ocr = load_ocr()
+# ---------------------------
 # ------------------------------
 # Настройка OpenAI
 # ------------------------------
