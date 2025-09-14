@@ -1,6 +1,5 @@
 streamlit
 paddleocr
-paddlepaddle
-transformers
-torch
+opencv-python-headless
+numpy
 openai
